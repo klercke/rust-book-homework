@@ -5,9 +5,9 @@ fn main() {
 
     // Array of the 12 gifts in the traditional song.
     let gifts = ["a partridge in a pear tree", "two turtle doves", "three French hens",
-                                "four calling birds", "five golden rings", "six geese a laying",
-                                "seven swans a swimming", "eight maids a milking",
-                                "nine ladies dancing", "ten lords a leaping",
+                                "four calling birds", "five golden rings", "six geese a-laying",
+                                "seven swans a-swimming", "eight maids a-milking",
+                                "nine ladies dancing", "ten lords a-leaping",
                                 "eleven pipers piping", "twelve drummers drumming"];
 
     // Check that the arrays are the same length.
