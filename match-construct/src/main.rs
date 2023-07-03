@@ -121,6 +121,21 @@ fn main() {
         _ => (), // the unit value works like pass in Python, so this is just saying "in any other case, do nothing"
     }
 
+    // here is an example of running code only if config_max is defined:
+    let config_max = Some(3u8);
+    match config_max {
+        Some(max) => println!("The maximum is configured to be {}", max),
+        _ => (),
+    }
+
+    // but we can use if let to do the same thing in a more concise way
+    // this is faster to write but skips some of the checking that match provides
+    // optionally, we could also provide an else block to run code if the value is None, just like the _ case in match above
+    let config_max = Some(3u8);
+    if let Some(max) = config_max {
+        println!("The maximum is configured to be {}", max);
+    }
+
     
 }
 
